@@ -11,14 +11,14 @@ Radboud: Prostate glands are individually labelled. Valid values are:
 4: cancerous epithelium (Gleason 4)
 5: cancerous epithelium (Gleason 5)
 
-(./images/Radbound.png)
+![preprocessing](./images/Radbound.png)
 
 Karolinska: Regions are labelled. Valid values are:
 0: background (non tissue) or unknown
 1: benign tissue (stroma and epithelium combined)
 2: cancerous tissue (stroma and epithelium combined)
 
-(./images/Karolinska.png)
+![preprocessing](./images/Karolinska.png)
 
 The train script is based on reference script from torchvision 0.4.0 with minor modification. So, you need to install the latest PyTorch and torchvision >= 0.4.0. Check [requirements.txt](requirements.txt) for all packages you need.
 
