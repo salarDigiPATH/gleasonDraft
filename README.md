@@ -1,7 +1,9 @@
 # Pix2PixHD for PANDA Challenge
 This is the code for Prostate cANcer graDe Assessment (PANDA) challenge. Check [here](https://www.kaggle.com/c/prostate-cancer-grade-assessment)
 
-The first step is to create image patches for training and validation of the segmentation model. The dataset consists of around 11,000 whole-slide images of digitized H&E-stained biopsies originating from two centers. These two centers are Radboud University Medical Center and Karolinska Institute. These two centers labelled the images differently.
+The first step is to create image patches for training and validation of the segmentation model. The dataset consists of around 11,000 whole-slide images of digitized H&E-stained biopsies originating from two centers. These two centers are Radboud University Medical Center and Karolinska Institute. These two centers labelled the images differently. The distribution of the images between the two data centers is shown here.
+
+![datasets](https://github.com/salarDigiPATH/SalarYakamoz/blob/master/images/dataset_numbers.png)
 
 Radboud: Prostate glands are individually labelled. Valid values are:
 0: background (non tissue) or unknown
@@ -11,14 +13,14 @@ Radboud: Prostate glands are individually labelled. Valid values are:
 4: cancerous epithelium (Gleason 4)
 5: cancerous epithelium (Gleason 5)
 
-![preprocessing](./images/Radbound.png)
+![imagesRadbound](https://github.com/salarDigiPATH/SalarYakamoz/blob/master/images/radbound_example.png)
 
 Karolinska: Regions are labelled. Valid values are:
 0: background (non tissue) or unknown
 1: benign tissue (stroma and epithelium combined)
 2: cancerous tissue (stroma and epithelium combined)
 
-![preprocessing](./images/Karolinska.png)
+![imagesKarolinska](https://github.com/salarDigiPATH/SalarYakamoz/blob/master/images/kar_example.png)
 
 The train script is based on reference script from torchvision 0.4.0 with minor modification. So, you need to install the latest PyTorch and torchvision >= 0.4.0. Check [requirements.txt](requirements.txt) for all packages you need.
 
